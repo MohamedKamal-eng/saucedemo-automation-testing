@@ -1,0 +1,12 @@
+[
+  {
+    "scenarioId": "standard_single_item",
+    "description": "Standard user buys one backpack item.",
+    "itemIds": ["sauce-labs-backpack"]
+  },
+  {
+    "scenarioId": "standard_two_items",
+    "description": "Standard user buys backpack and bike light.",
+    "itemIds": ["sauce-labs-backpack", "sauce-labs-bike-light"]
+  }
+]

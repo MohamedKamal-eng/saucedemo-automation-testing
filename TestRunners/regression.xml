@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="SauceDemo_RegressionSuite" verbose="1" preserve-order="true">
+    <listeners>
+        <listener class-name="com.saucedemo.listeners.TestResultListener"/>
+        <listener class-name="com.saucedemo.tests.utils.listeners.TestListener"/>
+    </listeners>
+    <test name="regression Tests">
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+
+        <packages>
+            <package name="com.saucedemo.tests.e2e"/>
+            <package name="com.saucedemo.tests.login"/>
+            <package name="com.saucedemo.tests.cart"/>
+            <package name="com.saucedemo.tests.inventory"/>
+            <package name="com.saucedemo.tests.checkout"/>
+            <package name="com.saucedemo.tests.menu"/>
+            <package name="com.saucedemo.tests.product"/>
+            <package name="com.saucedemo.tests.security"/>
+            <package name="com.saucedemo.tests.session"/>
+        </packages>
+    </test>
+</suite>

@@ -1,0 +1,26 @@
+[
+  {
+    "scenarioId": "missing_first_name",
+    "firstName": "",
+    "lastName": "Ahmed",
+    "postalCode": "12345",
+    "expectedErrorMessage": "Error: First Name is required",
+    "description": "First name is omitted."
+  },
+  {
+    "scenarioId": "missing_last_name",
+    "firstName": "Mohamed",
+    "lastName": "",
+    "postalCode": "12345",
+    "expectedErrorMessage": "Error: Last Name is required",
+    "description": "Last name is omitted."
+  },
+  {
+    "scenarioId": "missing_postal_code",
+    "firstName": "Mohamed",
+    "lastName": "Ahmed",
+    "postalCode": "",
+    "expectedErrorMessage": "Error: Postal Code is required",
+    "description": "Postal code is omitted."
+  }
+]

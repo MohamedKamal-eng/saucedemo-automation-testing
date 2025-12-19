@@ -1,0 +1,42 @@
+[
+  {
+    "scenarioId": "standard_user",
+    "userType": "standard",
+    "username": "standard_user",
+    "password": "secret_sauce",
+    "expectedErrorMessage": null,
+    "description": "Standard user – happy path"
+  },
+  {
+    "scenarioId": "problem_user",
+    "userType": "problem",
+    "username": "problem_user",
+    "password": "secret_sauce",
+    "expectedErrorMessage": null,
+    "description": "Problem user – used to validate product images / links issues"
+  },
+  {
+    "scenarioId": "performance_glitch_user",
+    "userType": "performance_glitch",
+    "username": "performance_glitch_user",
+    "password": "secret_sauce",
+    "expectedErrorMessage": null,
+    "description": "Performance glitch user – used for slow UI behavior checks"
+  },
+  {
+    "scenarioId": "error_user",
+    "userType": "error",
+    "username": "error_user",
+    "password": "secret_sauce",
+    "expectedErrorMessage": null,
+    "description": "Error user – used for front-end error state checks"
+  },
+  {
+    "scenarioId": "visual_user",
+    "userType": "visual",
+    "username": "visual_user",
+    "password": "secret_sauce",
+    "expectedErrorMessage": null,
+    "description": "Visual user – used to check visual differences"
+  }
+]

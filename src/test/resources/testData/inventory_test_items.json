@@ -1,0 +1,12 @@
+[
+  {
+    "itemId": "sauce-labs-backpack",
+    "itemName": "Sauce Labs Backpack",
+    "description": "Backpack item used for core inventory tests."
+  },
+  {
+    "itemId": "sauce-labs-bike-light",
+    "itemName": "Sauce Labs Bike Light",
+    "description": "Bike light item used for alternative inventory tests."
+  }
+]

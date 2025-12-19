@@ -1,0 +1,58 @@
+[
+  {
+    "scenarioId": "locked_out_user",
+    "userType": "locked_out",
+    "username": "locked_out_user",
+    "password": "secret_sauce",
+    "expectedErrorMessage": "Epic sadface: Sorry, this user has been locked out.",
+    "description": "Locked out user credentials should show locked out error."
+  },
+  {
+    "scenarioId": "empty_username",
+    "userType": "negative",
+    "username": "",
+    "password": "secret_sauce",
+    "expectedErrorMessage": "Epic sadface: Username is required",
+    "description": "Username field empty, password valid."
+  },
+  {
+    "scenarioId": "empty_password",
+    "userType": "negative",
+    "username": "standard_user",
+    "password": "",
+    "expectedErrorMessage": "Epic sadface: Password is required",
+    "description": "Password field empty, username valid."
+  },
+  {
+    "scenarioId": "empty_both",
+    "userType": "negative",
+    "username": "",
+    "password": "",
+    "expectedErrorMessage": "Epic sadface: Username is required",
+    "description": "Both fields empty; application validates username first."
+  },
+  {
+    "scenarioId": "invalid_username",
+    "userType": "negative",
+    "username": "invalid_user",
+    "password": "secret_sauce",
+    "expectedErrorMessage": "Epic sadface: Username and password do not match any user in this service",
+    "description": "Non-existent username with valid password."
+  },
+  {
+    "scenarioId": "invalid_password",
+    "userType": "negative",
+    "username": "standard_user",
+    "password": "wrong_password",
+    "expectedErrorMessage": "Epic sadface: Username and password do not match any user in this service",
+    "description": "Incorrect password for valid username."
+  },
+  {
+    "scenarioId": "invalid_both",
+    "userType": "negative",
+    "username": "wrong_user",
+    "password": "wrong_password",
+    "expectedErrorMessage": "Epic sadface: Username and password do not match any user in this service",
+    "description": "Both username and password are invalid."
+  }
+]

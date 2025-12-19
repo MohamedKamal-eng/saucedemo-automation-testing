@@ -1,0 +1,10 @@
+[
+  {
+    "scenarioId": "valid_standard_data",
+    "firstName": "Mohamed",
+    "lastName": "Ahmed",
+    "postalCode": "12345678",
+    "expectedErrorMessage": null,
+    "description": "Valid checkout data for standard user."
+  }
+]
