@@ -85,8 +85,8 @@ The framework follows a layered and modular design:
 ### Steps
 ***1. Clone the repository***
    ```
-git clone <YOUR_REPOSITORY_URL>
-cd <PROJECT_DIRECTORY>
+git clone https://github.com/MohamedKamal-eng/saucedemo-automation-testing.git
+cd saucedemo-automation-testing
    ```
 ***2. Run all tests***
    ```
