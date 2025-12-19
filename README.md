@@ -43,7 +43,7 @@ Tests are organized by feature for clarity and maintainability.
 ## 🏗️ Framework Architecture
 The framework follows a layered and modular design:
 
-- **Page Object Model (POM)** for UI abstraction
+- **Page Object Model (POM)** with reusable page components for UI abstraction
 - **Base test classes** to centralize setup, teardown, and shared flows
 - **Reusable components** for common UI elements
 - **Custom utilities** for:
@@ -106,7 +106,7 @@ mvn clean test -DsuiteXmlFile=TestRunners/fullSuite.xml
 - Reports provide:
     - Test execution status
     - Step-by-step test details
-    - Screenshots on failure
+    - Attachments and detailed failure information
     - Detailed assertion results
 
 To generate and view the Allure report:
