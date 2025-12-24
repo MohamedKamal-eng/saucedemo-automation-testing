@@ -6,7 +6,6 @@ import com.saucedemo.tests.base.BaseTest;
 import com.saucedemo.tests.utils.dataProviders.E2EDataProvider;
 import com.saucedemo.tests.utils.models.CheckoutModel;
 import com.saucedemo.tests.utils.models.ItemModel;
-import com.saucedemo.tests.utils.models.OrderModel;
 import com.saucedemo.tests.utils.models.UserModel;
 import io.qameta.allure.*;
 import org.testng.Assert;
@@ -36,7 +35,7 @@ public class StandardPurchaseTest extends BaseTest {
                     "verifies them in Cart and Checkout Overview, then completes the purchase and checks " +
                     "that the Checkout Complete page is displayed with a thank-you message."
     )
-    public void TC_E2E_001_standardUserCompletesPurchase(OrderModel order, UserModel standardUser, CheckoutModel checkoutData, List<ItemModel> orderItems) {
+    public void TC_E2E_001_standardUserCompletesPurchase( UserModel standardUser, CheckoutModel checkoutData, List<ItemModel> orderItems) {
 
         InventoryPage inventoryPage = new InventoryPage();
         CartPage cartPage = new CartPage();

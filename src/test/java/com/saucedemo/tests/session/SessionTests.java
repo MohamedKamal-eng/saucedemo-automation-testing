@@ -17,7 +17,6 @@ public class SessionTests extends LoginBaseTest {
 
     /**
      * TC_SESS_001 - Verify cart state is preserved after refreshing Inventory page.
-     *
      * Steps:
      *  1) Logged in (handled by LoginBaseTest).
      *  2) Add item to cart from Inventory.
@@ -73,7 +72,6 @@ public class SessionTests extends LoginBaseTest {
 
     /**
      * TC_SESS_002 - Verify cart contents are preserved after refreshing Cart page.
-     *
      * Steps:
      *  1) Logged in (handled by LoginBaseTest).
      *  2) Add item to cart from Inventory and open Cart.
